@@ -17,7 +17,6 @@ bash
 Copy code
 git clone https://github.com/afcbpeter1/saucelabs.git
 Import the project into IntelliJ IDEA
-Switch to master branch
 
 Open IntelliJ IDEA.
 Choose File > Open and navigate to the root of the cloned project.
