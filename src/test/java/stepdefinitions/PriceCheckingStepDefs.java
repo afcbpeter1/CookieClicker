@@ -2,22 +2,28 @@ package stepdefinitions;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import net.serenitybdd.annotations.Step;
+import net.serenitybdd.junit.runners.SerenityRunner;
 import org.junit.Assert;
+import org.junit.runner.RunWith;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import runners.Selectors;
+import stepdefinitions.Runners.Hooks;
 
-public class priceCheckingStepDefs {
-
+@RunWith(SerenityRunner.class)
+public class PriceCheckingStepDefs extends Selectors {
+    @Step
     @When("I click Back to products")
     public void i_click_back_to_products() {
-        Hooks.driver.findElement(By.cssSelector("#back-to-products")).click();
+        Hooks.driver.findElement(By.cssSelector(BACK_TO_PRODUCTS_BUTTON)).click();
     }
 
-    //Bug when moving back to the all products page the prices of all the products change
+    @Step
     @Then("I should see the value of $7.99")
     public void i_should_see_the_value_of_product() {
 
-        WebElement onesiePrice = Hooks.driver.findElement(By.cssSelector("#inventory_container > div > div:nth-child(5) > div.inventory_item_description > div.pricebar > div"));
+        WebElement onesiePrice = Hooks.driver.findElement(By.cssSelector(ONESIE_PRICE));
         // Assert that the element is visible
         String actualPrice = onesiePrice.getText().trim();
 
