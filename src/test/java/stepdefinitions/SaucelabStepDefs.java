@@ -2,18 +2,13 @@ package stepdefinitions;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.serenitybdd.annotations.Step;
-import net.serenitybdd.junit.runners.SerenityRunner;
 import org.junit.Assert;
-import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.openqa.selenium.*;
 import runners.Selectors;
 import stepdefinitions.Runners.Hooks;
 
-@RunWith(SerenityRunner.class)
 public class SaucelabStepDefs extends Selectors {
 
-    @Step
     @When("I enter the username {string} and password {string}")
     public void i_enter_the_username_and_password(String username, String password) {
 
@@ -26,7 +21,7 @@ public class SaucelabStepDefs extends Selectors {
         passwordInput.sendKeys(password);
         Hooks.driver.findElement(By.xpath(LOGIN_BUTTON)).click();
     }
-    @Step
+
     @Then("I should be redirected to the Products page displaying available products")
     public void i_should_be_redirected_to_the_products_page_displaying_available_products() {
 
@@ -42,7 +37,7 @@ public class SaucelabStepDefs extends Selectors {
         // Assert that the element is visible
         Assert.assertTrue("Expected shopping cart container to be visible, but it was not.", cartContainer.isDisplayed());
     }
-    @Step
+
     @Then("I should see the error message {string}")
     public void i_should_see_the_error_message(String expectedErrorMessage) {
         System.out.println("Verifying error message: " + expectedErrorMessage);

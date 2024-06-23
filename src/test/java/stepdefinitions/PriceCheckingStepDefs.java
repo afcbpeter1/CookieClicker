@@ -2,24 +2,20 @@ package stepdefinitions;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import net.serenitybdd.annotations.Step;
-import net.serenitybdd.junit.runners.SerenityRunner;
 import org.junit.Assert;
-import org.junit.runner.RunWith;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import runners.Selectors;
 import stepdefinitions.Runners.Hooks;
 
-@RunWith(SerenityRunner.class)
+
 public class PriceCheckingStepDefs extends Selectors {
-    @Step
+
     @When("I click Back to products")
     public void i_click_back_to_products() {
         Hooks.driver.findElement(By.cssSelector(BACK_TO_PRODUCTS_BUTTON)).click();
     }
 
-    @Step
     @Then("I should see the value of $7.99")
     public void i_should_see_the_value_of_product() {
 
