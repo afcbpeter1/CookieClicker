@@ -1,7 +1,6 @@
 package stepdefinitions;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import net.serenitybdd.annotations.Step;
 import org.junit.Assert;
 import org.openqa.selenium.*;
 import runners.Selectors;

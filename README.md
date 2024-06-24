@@ -59,3 +59,11 @@ Dependency Issues: Double-check your pom.xml file to ensure all necessary depend
 Additional Notes
 Customize the project as needed for your specific application and testing requirements.
 Refer to the Cucumber documentation and Selenium documentation for more advanced configurations and features.
+
+Accessibility
+Home Page
+ 
+ 
+Game Page
+ 
+

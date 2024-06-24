@@ -19,7 +19,7 @@ public class Hooks {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.saucedemo.com/");
-
+//      driver.get("https://peter-kirby-2024-06-21.cookieclickertechtest.airelogic.com/");
     }
 
     @After
