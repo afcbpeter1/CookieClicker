@@ -1,6 +1,4 @@
 stepdefinitions\Runners\Hooks.class
-runners\Selectors.class
-stepdefinitions\Runners\CucumberRunner.class
-stepdefinitions\ProductCartStepDefs.class
-stepdefinitions\SaucelabStepDefs.class
-stepdefinitions\PriceCheckingStepDefs.class
+stepdefinitions\CucumberTest.class
+runners\CookieClickerSelectors.class
+stepdefinitions\CookieClickerGameStepDefs.class

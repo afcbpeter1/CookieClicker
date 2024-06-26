@@ -1,6 +1,4 @@
-C:\Users\kirby\IdeaProjects\SauceLabs\src\test\java\stepdefinitions\PriceCheckingStepDefs.java
-C:\Users\kirby\IdeaProjects\SauceLabs\src\test\java\stepdefinitions\Runners\Hooks.java
-C:\Users\kirby\IdeaProjects\SauceLabs\src\test\java\stepdefinitions\SaucelabStepDefs.java
-C:\Users\kirby\IdeaProjects\SauceLabs\src\test\java\runners\Selectors.java
-C:\Users\kirby\IdeaProjects\SauceLabs\src\test\java\stepdefinitions\ProductCartStepDefs.java
-C:\Users\kirby\IdeaProjects\SauceLabs\src\test\java\stepdefinitions\Runners\CucumberRunner.java
+C:\Users\kirby\IdeaProjects\cookieclicker\src\test\java\stepdefinitions\CucumberTest.java
+C:\Users\kirby\IdeaProjects\cookieclicker\src\test\java\runners\CookieClickerSelectors.java
+C:\Users\kirby\IdeaProjects\cookieclicker\src\test\java\stepdefinitions\CookieClickerGameStepDefs.java
+C:\Users\kirby\IdeaProjects\cookieclicker\src\test\java\stepdefinitions\Runners\Hooks.java

@@ -7,7 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SauceLabsTests" />
-        <module name="SauceLabs" />
+        <module name="CookieClicker" />
       </profile>
     </annotationProcessing>
   </component>
